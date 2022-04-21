@@ -25,6 +25,7 @@ class _VidPlayerState extends State<VidPlayer> with SingleTickerProviderStateMix
     _controller = VideoPlayerController.asset(widget.path, videoPlayerOptions: options,)
     ..initialize().then((_) {
       _controller.play();
+      _controller.setLooping(true);
       setState(() {});
     });
   }
