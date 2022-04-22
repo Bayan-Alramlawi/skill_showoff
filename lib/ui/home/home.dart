@@ -48,6 +48,7 @@ class Home extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: DummyData.courses.length,
                     itemBuilder: (context, index){
+                      mainProvider.navContext = context;
                       return CourseCard(course: DummyData.courses[index]);
                     },
                   ),

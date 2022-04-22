@@ -18,6 +18,7 @@ class _VidPlayerState extends State<VidPlayer> with SingleTickerProviderStateMix
 
   bool _playing = true;
   bool _mute = false;
+
   @override
   void initState() {
     super.initState();
